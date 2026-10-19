@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+/***
+===================
+Variables
+===================
+***/
+$primary: #002985;
+$primary-light: #E6ECFC;
+$gray: #f9fafb;
+$grey-dark: #101828;
+$gray-light: #f5f5f5;
+$grey-alt: #eaebec;
+$black: #000000;
+$white: #ffffff;
+$error: #b00000;
+$secondry: #ff9900;
+$transparent: #ffffff99;
+$success: #5ec15b;
+/***
+===================
+ General Styles
+===================
+***/
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+label {
+  letter-spacing: .12rem;
+}
+.text-grey{
+  color: #98A2B3;
+}
+.bg-yellow{
+  background-color: #FEFBE8;
+
+}
+.font-small{
+  font-size: 0.9rem;
+}
+.text-primary {
+  color: $primary !important;
+}
+.text-danger {
+  color: $error !important;
+}
+.text-success,
+.text-green {
+  color: $success !important;
+}
+.primary-bg {
+  background-color: $primary !important;
+}
+.text-height {
+  min-height: 6.5rem;
+}
+
+
+// media query variables
+$maxMobile: "(max-width:575px)"; // from 0 to max mobile   // xs
+$minSmall: "(min-width:576px)"; // from small to up        // sm
+$maxSmall: "(max-width:767px)"; // from 0 to max small     // sm
+$minMedium: "(min-width:768px)"; // from medium to up        // medium
+$maxMedium: "(max-width:991px)"; // from 0 to max medium        // medium
+$minLarge: "(min-width:992px)"; // from large to up        // large
+$minXlarge: "(min-width:1200px)"; // from xlarge to up        // xl
+//fonts
+$main-font-en: "Roboto";
+
+body{
+  background-color:$gray ;
+  font-family:$main-font-en ;
+}
+.breadcrumb{
+  background-color: transparent;
+  *{
+    color: #475467;
+  }
+}
+/***
+ ===================
+ header style
+ ===================
+ ***/
+
+
+.site-header{
+ .header-top{
+   background-color: $primary;
+   .navbar-nav {
+     .nav-item a, .nav-item i{
+       color: $white;
+     }
+   }
+ }
+  .header-bottom{
+    background-color: $primary-light;
+    .navbar-toggler-icon{
+      // background-image: url("assets/imgs/download.svg");
+    }
+    .navbar-nav{
+      .nav-item{
+        a{
+          color:$grey-dark;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+/***
+ ===================
+ Product style
+ ===================
+ ***/
+
+.products-container{
+  .product-card{
+        box-shadow: 5px 6px 14px #d9e3eb;
+  }
+  .cart-btn{
+     width: 100%;
+    font-size: 12px;
+    background: #002985;
+    padding: 6px 8px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .item-img{
+    background-color: $white;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+    .card-img{
+      width:  100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+  .item-content{
+    cursor: pointer;
+    background-color:$white;
+  }
+  .item-desc{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: capitalize;
+  }
+  .prd-title{
+    color: #344054;
+  }
+  .full-desc{
+    color: #98A2B3;
+  }
+  .item-price{
+   .currency{
+     font-size: 0.6rem;
+     font-weight: 400;
+     color: #98A2B3;
+   }
+    .badge{
+      font-size: 0.8rem;
+      font-weight: normal;
+      i.fa-star{
+        color: #FAC515;
+        font-size: 0.6rem;
+
+      }
+      .stock{
+        font-size: 0.7rem;
+        color: #98A2B3;
+      }
+    }
+    h4{
+      strong{
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+    }
+
+  }
+  .pagination{
+    .page-item:not(.disabled) .page-link{
+      color: $black;
+    }
+    .page-item.active .page-link{
+      background-color:   $gray;
+      border-color: #dadbdc;
+      color: $black;
+    }
+  }
+}
+
+/***
+ ===================
+ Filter style
+ ===================
+ ***/
+
+.filter-sec{
+  .filter-title{
+
+  }
+  ul.list-group.list-group-flush{
+
+     li.list-group-item {
+      border: 0;
+      border-left: 1px solid #EAECF0;
+      background: transparent;
+       cursor: pointer;
+    }
+    .list-group-item.active{
+      background-color: $primary-light;
+      color: $primary;
+    }
+  }
+}
+
+
+.checkout-link{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
