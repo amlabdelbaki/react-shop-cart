@@ -2,7 +2,7 @@
 import './App.scss';
 
 import WatchList from './components/watchList';
-import { BrowserRouter, Routes, Route,Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './components/layout';
 import Cart  from "./components/cart";
 import Home from './components/home';

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import Product from "./product";
@@ -14,7 +14,7 @@ function ProductList() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
   //   const fetchProducts = () => {
   //     const api = "https://dummyjson.com/products?limit=100";
   //     fetch(api)

@@ -18,7 +18,7 @@ function Header() {
             <div className="row align-items-center">
               <div className="col-12 col-md">
                 <Link className="navbar-brand" to="/">
-                  <img src={logo} />
+                  <img src={logo} alt='logo'/>
                 </Link>
               </div>
               <div className="col-12 col-md-6">
@@ -103,7 +103,7 @@ function Header() {
                        </p>
                       )}
 
-                      {cartList.length == 0 && (
+                      {cartList.length === 0 && (
                         <p className="lead text-center text-primary font-small px-1 mb-0">
                           No Product Added
                         </p>
